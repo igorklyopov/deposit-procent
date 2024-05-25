@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Проценты по вкладу</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+    <h1>Проценты по вкладу</h1>
+    <form action="" id="form">
+      <label>
+        <span>размер начисленного дохода по вкладу</span>
+        <input type="number" min="0.01" name="profitInput" id="profitInput" />
+      </label>
+      <label>
+        <span>сумма вклада</span>
+        <input type="number" min="0.01" step="0.01" name="sumInput" id="sumInput" />
+      </label>
+      <label>
+        <span>депозитная ставка, годовых</span>
+        <input type="number" min="0.01" step="0.01" name="rateInput" id="rateInput" />
+      </label>
+      <div>
+        <span>срок вклада</span>
+
+        <br><!-- for test -->
+
+        <label>
+          <span>срок вклада в днях за вычетом первого и последнего дня</span>
+          <input type="number" min="1" name="daysNumberInput" id="daysNumberInput" />
+        </label>
+
+        <label>
+          <span>с</span>
+          <input type="date" name="dateFrom" id="dateFrom" />
+        </label>
+        <label>
+          <span>по</span>
+          <input type="date" name="dateTo" id="dateTo" />
+        </label>
+      </div>
+
+
+      <label>
+        <span>количество дней в году</span>
+        <input type="number" min="365" max="366" value="365" name="yearDaysInput" id="yearDaysInput" />
+      </label>
+
+      <button type="reset" id="reset">reset</button>
+      <button type="submit" id="calculateButton">calculate</button>
+    </form>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
