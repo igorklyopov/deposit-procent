@@ -1,9 +1,17 @@
-#form {
+#depositForm {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-#form label {
+#depositForm label {
   margin-bottom: 20px;
+}
+
+.error{
+outline: 2px solid red;
+}
+
+.hidden{
+  display: none;
 }

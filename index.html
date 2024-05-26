@@ -11,7 +11,7 @@
 <body>
   <main>
     <h1>Проценты по вкладу</h1>
-    <form action="" id="form">
+    <form action="" id="depositForm">
       <label>
         <span>размер начисленного дохода по вкладу</span>
         <input type="number" min="0.01" name="profitInput" id="profitInput" />
@@ -25,7 +25,7 @@
         <input type="number" min="0.01" step="0.01" name="rateInput" id="rateInput" />
       </label>
       <div>
-        <span>срок вклада</span>
+        <h3>срок вклада</h3>
 
         <br><!-- for test -->
 
@@ -36,11 +36,11 @@
 
         <label>
           <span>с</span>
-          <input type="date" name="dateFrom" id="dateFrom" />
+          <input type="date" name="dateFromInput" id="dateFromInput" />
         </label>
         <label>
           <span>по</span>
-          <input type="date" name="dateTo" id="dateTo" />
+          <input type="date" name="dateToInput" id="dateToInput" />
         </label>
       </div>
 
@@ -50,7 +50,7 @@
         <input type="number" min="365" max="366" value="365" name="yearDaysInput" id="yearDaysInput" />
       </label>
 
-      <button type="reset" id="reset">reset</button>
+      <button type="resetButton" id="resetButton">reset</button>
       <button type="submit" id="calculateButton">calculate</button>
     </form>
 
